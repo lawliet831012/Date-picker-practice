@@ -1,12 +1,15 @@
 # Date-picker
+
+attempt to refactor [react-datetime](https://github.com/arqex/react-datetime) by react hook.
+
 ------------
 ## Script
 
-**yarn dev** - run webpack dev server for development.
-**yarn build** - build static file in `./dist`.
-**yarn serve** - [serve](https://www.npmjs.com/package/serve) `./dist` on 3000 port
-**yarn lint** - check linter.
-**yarn lint-fix** - check linter and auto fix if possible
+**yarn dev** - run webpack dev server for development.  
+**yarn build** - build static file in `./dist`.  
+**yarn serve** - [serve](https://www.npmjs.com/package/serve) `./dist` on 3000 port.  
+**yarn lint** - check linter.  
+**yarn lint-fix** - check linter and auto fix if possible.  
 
 --------------
 ## API

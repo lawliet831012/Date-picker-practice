@@ -1,0 +1,166 @@
+.dp {
+  position: relative;
+}
+.dp-Picker {
+  display: none;
+  position: absolute;
+  min-width: 250px;
+  padding: 4px;
+  margin-top: 1px;
+  z-index: 99999 !important;
+  background: #fff;
+  box-shadow: 0px 2px 8px rgba(0,0,0,.5);
+  border: 1px solid #fff;
+}
+.dp-Open .dp-Picker {
+  display: block;
+}
+.dp-Static .dp-Picker {
+  box-shadow: none;
+  position: static;
+}
+
+.dp-Picker .dp-TimeToggle {
+  text-align: center;
+}
+
+.dp-Picker table {
+  width: 100%;
+  margin: 0;
+}
+.dp-Picker td,
+.dp-Picker th {
+  text-align: center;
+  height: 28px;
+}
+.dp-Picker td {
+  cursor: pointer;
+  border-radius: 50%;
+}
+.dp-Picker td.dp-Day:hover,
+.dp-Picker td.dp-Hour:hover,
+.dp-Picker td.dp-Minute:hover,
+.dp-Picker td.dp-Second:hover,
+.dp-Picker .dp-TimeToggle:hover {
+  background: #eeeeee;
+  cursor: pointer;
+}
+.dp-Picker td.dp-Old,
+.dp-Picker td.dp-New {
+  color: #eeeeee;
+}
+.dp-Picker td.dp-Today {
+  position: relative;
+  color: #db3d44;
+}
+
+.dp-Picker td.dp-Active,
+.dp-Picker td.dp-Active:hover {
+  background-color: #db3d44;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.dp-Picker td.dp-Active.dp-Today:before {
+  border-bottom-color: #fff;
+}
+.dp-Picker td.dp-Disabled,
+.dp-Picker td.dp-Disabled:hover {
+  background: none;
+  color: #eeeeee;
+  cursor: not-allowed;
+}
+
+.dp-Picker td span.dp-Old {
+  color: #eeeeee;
+}
+.dp-Picker td span.dp-Disabled,
+.dp-Picker td span.dp-Disabled:hover {
+  background: none;
+  color: #eeeeee;
+  cursor: not-allowed;
+}
+.dp-Picker th {
+  border-bottom: 1px solid #eeeeee;
+}
+.dp-Picker .dow {
+  width: 14.2857%;
+  border-bottom: none;
+  cursor: default;
+}
+.dp-Picker th.dp-Switch {
+  width: 100px;
+}
+.dp-Picker th.dp-Next,
+.dp-Picker th.dp-Prev {
+  font-size: 21px;
+  vertical-align: top;
+}
+
+.dp-Prev span,
+.dp-Next span {
+  display: block;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.dp-Picker th.dp-Disabled,
+.dp-Picker th.dp-Disabled:hover {
+  background: none;
+  color: #eeeeee;
+  cursor: not-allowed;
+}
+.dp-Picker thead tr:first-of-type th {
+  cursor: pointer;
+}
+.dp-Picker thead tr:first-of-type th:hover {
+  background: #eeeeee;
+}
+
+.dp-Picker tfoot {
+  border-top: 1px solid #f9f9f9;
+}
+
+.dp-Picker button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.dp-Picker button:hover {
+  background-color: #eeeeee;
+}
+
+.dp-Picker thead button {
+  width: 100%;
+  height: 100%;
+}
+
+td.dp-Month,
+td.dp-Year {
+  height: 50px;
+  width: 25%;
+  cursor: pointer;
+}
+td.dp-Year: {
+  color: #eeeeee;
+}
+td.dp-Month:hover,
+td.dp-Year:hover {
+  background: #eeeeee;
+}
+
+
+.dp-Milli {
+  vertical-align: middle;
+  padding-left: 8px;
+  width: 48px;
+}
+
+.dp-Milli input {
+  width: 100%;
+  font-size: 1.2em;
+  margin-top: 37px;
+}
